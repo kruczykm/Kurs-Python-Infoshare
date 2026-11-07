@@ -1,0 +1,4 @@
+1. Uczyć się podstaw Pythona.
+2. Zrozumieć wyjątki i try-except.
+3. Napisać pierwsze mini-CLI.
+4. Przetestować mini-CLI.

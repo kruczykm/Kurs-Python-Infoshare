@@ -1,0 +1,2 @@
+Add color to terminal output later.
+Duplicate detection is a future improvement.
