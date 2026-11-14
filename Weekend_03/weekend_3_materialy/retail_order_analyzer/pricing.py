@@ -1,7 +1,7 @@
 try:
     from .validators import Order, is_valid_order
 except ImportError:
-    from InfoShare_AI_Python.Weekend_03.weekend_3_materialy.retail_order_analyzer.validators import Order, is_valid_order
+    from validators import Order, is_valid_order
 
 
 def calculate_line_total(quantity: int, unit_price: float) -> float:

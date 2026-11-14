@@ -1,5 +1,5 @@
-from InfoShare_AI_Python.Weekend_03.weekend_3_materialy.retail_order_analyzer.pricing import calculate_total_revenue, count_valid_orders
-from InfoShare_AI_Python.Weekend_03.weekend_3_materialy.retail_order_analyzer.reports import print_revenue_report
+from pricing import calculate_total_revenue, count_valid_orders
+from reports import print_revenue_report
 
 
 orders = [

@@ -1,5 +1,5 @@
-from InfoShare_AI_Python.Weekend_03.order_analyzer.pricing import calculate_total_revenue
-from InfoShare_AI_Python.Weekend_03.order_analyzer.reports import print_revenue_report
+from pricing import calculate_total_revenue
+from reports import print_revenue_report
 
 # Alisy mozna tez tworzyc w ten sposob
 type Order = dict[str, str]

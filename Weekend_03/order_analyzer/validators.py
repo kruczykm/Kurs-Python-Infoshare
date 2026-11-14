@@ -1,5 +1,5 @@
 # importuje nasz ALias
-from InfoShare_AI_Python.Weekend_03.order_analyzer.type_aliases import Order
+from type_aliases import Order
 
 MIN_VALID_QUANTITY = 1
 MIN_VALID_PRICE = 0.0

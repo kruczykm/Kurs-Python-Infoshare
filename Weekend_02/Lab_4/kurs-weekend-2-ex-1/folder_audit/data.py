@@ -25,32 +25,17 @@ Główne elementy modułu:
 from typing import TypedDict
 
 class FileInfo(TypedDict):
-    '''
-    FileInfo (TypedDict):
-    Służy jako kontrakt (szablon) dla słowników opisujących pojedyncze pliki.
-    TypedDict nie tworzy ciężkich obiektów klas, lecz informuje edytor kodu 
-    (np. VS Code), jakie dokładne klucze i typy danych (np. path: str) 
-    muszą znajdować się wewnątrz zwykłego słownika, dając wygodę podpowiedzi.
-    '''
     path: str
     extension: str
     size_bytes: int
 
 class AuditSummary(TypedDict):
-    '''
-    AuditSummary (TypedDict):
-    Kontrakt (szablon) opisujący strukturę słownika z podsumowaniem całego audytu.
-    Przechowuje statystyki folderu (m.in. łączną liczbę plików, całkowity rozmiar,
-    słownik zliczeń rozszerzeń oraz listę największych plików typu FileInfo).
-    '''
     file_count: int
     total_size_bytes: int
     extension_counts: dict[str, int]
     largest_files: list[FileInfo]
 
 # Przykładowe dane testowe trzymane w pamięci.
-# Służą do testowania logiki naszych funkcji (takich jak zliczanie czy unikalne rozszerzenia)
-# bez konieczności faktycznego skanowania prawdziwych folderów na dysku.
 SAMPLE_FILES: list[FileInfo] = [
     {"path": "notes/todo.txt", "extension": ".txt", "size_bytes": 1200},
     {"path": "notes/ideas.txt", "extension": ".txt", "size_bytes": 800},

@@ -1,5 +1,5 @@
-from InfoShare_AI_Python.Weekend_03.order_analyzer.type_aliases import Orders
-from InfoShare_AI_Python.Weekend_03.order_analyzer.validators import is_valid_order
+from type_aliases import Orders
+from validators import is_valid_order
 
 
 def calculate_line_total(quantity: int, unit_price: float) -> float:
